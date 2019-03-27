@@ -1,15 +1,15 @@
 <template>
   <div class="container">
-    <app-new-post></app-new-post>
+    <app-single-post></app-single-post>
 </div>
 </template>
 
 <script>
-  import NewPost from './posts/newPost.vue';
+  import SinglePost from './components/SinglePost.vue';
 
   export default {
     components:{
-      appNewPost : NewPost
+      appSinglePost : SinglePost
     }
   }
 </script>

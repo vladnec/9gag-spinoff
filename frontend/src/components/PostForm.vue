@@ -42,7 +42,7 @@
         	fd.append('image' , this.post.selectedFile, this.post.selectedFile.name);
         	fd.append('title', this.post.title);
         	fd.append('content', this.post.content);
-          axios.post('http://localhost:3000/api/posts/', fd,{
+          axios.post('posts', fd,{
           	headers: {'Content-Type' : 'multipart/form-data'}
           })
             .then(res => {
